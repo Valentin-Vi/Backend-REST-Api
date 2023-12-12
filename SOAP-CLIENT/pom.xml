@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>final_ProgAvanzada_REVIEW</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>SOAP-CLIENT</artifactId>
+    <name>Archetype - SOAP-CLIENT</name>
+    <url>http://maven.apache.org</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>2.25.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>2.25.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-ri</artifactId>
+            <version>2.3.3</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>javax.jws</groupId>
+            <artifactId>javax.jws-api</artifactId>
+            <version>1.1</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.sun.xml.ws</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+
+                    <extension>true</extension>
+
+                    <!--                    <wsdlFiles>-->
+                    <!--                        <wsdlFile>SOAP-CLIENT\src\main\resources\alquiler.wsdl</wsdlFile>-->
+                    <!--                        <wsdlFile>SOAP-CLIENT\src\main\resources\cliente.wsdl</wsdlFile>-->
+                    <!--                        <wsdlFile>SOAP-CLIENT\src\main\resources\sucursal.wsdl</wsdlFile>-->
+                    <!--                        <wsdlFile>SOAP-CLIENT\src\main\resources\vehiculo.wsdl</wsdlFile>-->
+                    <!--                        <wsdlFile>SOAP-CLIENT\src\main\resources\hql.wsdl</wsdlFile>-->
+                    <!--                    </wsdlFiles>-->
+                    <wsdlUrls>
+                        <wsdlUrl>http://localhost:8080/SOAP_war_exploded/alquiler?wsdl</wsdlUrl>
+                        <wsdlUrl>http://localhost:8080/SOAP_war_exploded/cliente?wsdl</wsdlUrl>
+                        <wsdlUrl>http://localhost:8080/SOAP_war_exploded/sucursal?wsdl</wsdlUrl>
+                        <wsdlUrl>http://localhost:8080/SOAP_war_exploded/vehiculo?wsdl</wsdlUrl>
+                        <wsdlUrl>http://localhost:8080/SOAP_war_exploded/hql?wsdl</wsdlUrl>
+                    </wsdlUrls>
+
+                    <!--                    <keep>true</keep>-->
+
+                    <sourceDestDir>
+                        ${project.build.directory}/generated-sources/
+                    </sourceDestDir>
+
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
