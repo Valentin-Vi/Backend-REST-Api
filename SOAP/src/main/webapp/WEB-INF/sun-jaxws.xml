@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
+
+    <endpoint name="AlquilerSOAP"
+              implementation="soapws.impl.AlquilerSOAPImpl"
+              url-pattern="/alquiler"
+    />
+    <endpoint name="ClienteSOAP"
+              implementation="soapws.impl.ClienteSOAPImpl"
+              url-pattern="/cliente"
+    />
+    <endpoint name="SucursalSOAP"
+              implementation="soapws.impl.SucursalSOAPImpl"
+              url-pattern="/sucursal"
+    />
+    <endpoint name="VehiculoSOAP"
+              implementation="soapws.impl.VehiculoSOAPImpl"
+              url-pattern="/vehiculo"
+    />
+    <endpoint name="HQLSOAP"
+              implementation="soapws.impl.HQLSOAPImpl"
+              url-pattern="/hql"
+    />
+
+</endpoints>
