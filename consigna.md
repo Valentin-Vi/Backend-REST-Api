@@ -1,6 +1,7 @@
 
 # Final Programación Avanzada (USAL) Universidad del Salvador Nuestra Señora de Pilar
 06/12/2023
+
 Valentin Villa 
 
 ## IMPORTANTE - Aclaración del Examen
@@ -11,13 +12,11 @@ Diseñe una API Rest que permita administrar el alquiler de vehículos básicos 
 turistas. Concéntrese en la disponibilidad de los productos para alquilar y no en la facturación. Es decir, la
 API debe exponer la acción de alquilar los vehículos (Manejando el stock disponible en cada punto de
 retiro) y conocer el estado de estos (Si están disponibles o alquilados).
-
 Un turista puede alquilar un vehículo básico o camioneta 4 x 4 por vez en diferentes puntos de alquileres
 teniendo en cuenta: Fecha de alquiler, fecha estimada de devolución y fecha de devolución, punto de
 alquiler origen, punto alquiler destino. Puede agregar más atributos si 10 cree necesario. Todos los
 vehículos poseen patente y km recorridos, los vehículos básicos poseen categorías (Hatchback, Sedan,
 SUV) y las 4 x 4 poseen kg de torque.
-
 Estos datos se encontrarán en un backend, el cual deberá de estar codificado con base de datos a
 elección.
 La API Rest, no consumirá directamente el backend, tendrá que hacerlo mediante un cliente SOAP.
