@@ -4,10 +4,10 @@
 
 Valentin Villa 
 
-## IMPORTANTE - Aclaración del Examen
+### IMPORTANTE - Aclaración del Examen
 El final tendrá una duración de 2 horas.
 
-### Practica
+#### Practica
 Diseñe una API Rest que permita administrar el alquiler de vehículos básicos y camionetas 4 x 4 para 
 turistas. Concéntrese en la disponibilidad de los productos para alquilar y no en la facturación. Es decir, la
 API debe exponer la acción de alquilar los vehículos (Manejando el stock disponible en cada punto de
@@ -21,7 +21,7 @@ Estos datos se encontrarán en un backend, el cual deberá de estar codificado c
 elección.
 La API Rest, no consumirá directamente el backend, tendrá que hacerlo mediante un cliente SOAP.
 
-### Utilizar todo 10 que considere necesario de 10 visto en la cursada y aplicar los patrones de diseños correspondientes. Los reportes que su modelo deberá satisfacer son los siguientes (utilizando HQL):
+#### Utilizar todo 10 que considere necesario de 10 visto en la cursada y aplicar los patrones de diseños correspondientes. Los reportes que su modelo deberá satisfacer son los siguientes (utilizando HQL):
 1. Retornar las devoluciones esperadas del día X en un determinado punto de alquiler. Patente e vehículo, Punto de devolución (Por ejemplo, aeropuerto, o ciudad X), DNI del turista, Fecha]Hora. (25)
 2. Retomar los últimos 10 alquileres realizados por un DNI: Nombre del turista, patente, estado, fecha de alquiler, fecha estimada de devolución, fecha de devolución, tipo de vehículo. (25)
 3. Retornar los vehículos disponibles para alquilar de un determinado punto de alquiler. Punto de alquiler, Tipo de vehículo, Patente, km recorridos. (20)
